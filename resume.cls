@@ -65,14 +65,16 @@
 %------------------------------------------------------------------------------
 % Commands
 %------------------------------------------------------------------------------
+\newcommand*{\name}[1]{\def\@name{#1}}
+\newcommand*{\position}[1]{\def\@position{#1}}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
 \newcommand*{\email}[1]{\def\@email{#1}}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 \newcommand*{\github}[1]{\def\@github{#1}}
 \newcommand{\makecvsocials}{
     \begin{center}
-        {\Huge\bfseries Georgios Fotopoulos}\vspace{0.25em}\\
-        {\small\textcolor{Secondary}{Software Engineer}}\vspace{0.25em}\\
+        {\Huge\bfseries\@name}\vspace{0.25em}\\
+        {\small\textcolor{Secondary}{\@position}}\vspace{0.25em}\\
         {\small\itshape\textcolor{Primary!50}{Gkoura 98, Piraeus 18546, Greece}}\\
         \ifthenelse
             {\isundefined{\@mobile}}
