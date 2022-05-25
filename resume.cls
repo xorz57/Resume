@@ -54,15 +54,15 @@
     \ifthenelse
         {\isundefined{\@mobile}}
         {}
-        {\href{tel:\@mobile}{\faPhone\space\@mobile} \sep }
+        {\href{tel:\@mobile}{\faPhone\space\@mobile} \cvseparator }
     \ifthenelse
         {\isundefined{\@email}}
         {}
-        {\href{mailto:\@email}{\faEnvelope\space\@email} \sep }
+        {\href{mailto:\@email}{\faEnvelope\space\@email} \cvseparator }
     \ifthenelse
         {\isundefined{\@github}}
         {}
-        {\href{https://github.com/\@github}{\faGithub\space\@github} \sep }
+        {\href{https://github.com/\@github}{\faGithub\space\@github} \cvseparator }
     \ifthenelse
         {\isundefined{\@linkedin}}
         {}
@@ -70,7 +70,7 @@
 \end{center}
 }
 
-\newcommand{\sep}{\textcolor{Primary!50}{ | }}
+\newcommand{\cvseparator}{\textcolor{Primary!50}{ | }}
 \newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
 \newcommand{\cventryii}[2]{\item[] {#1}\hfill\textcolor{Primary!50}{#2}}
 \newcommand{\cventryiv}[4]{\item[]
