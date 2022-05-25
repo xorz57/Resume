@@ -65,7 +65,7 @@
 %------------------------------------------------------------------------------
 \pagestyle{fancy}
 \fancyhead{}
-\fancyfoot[C]{\textcolor{Primary!50}{Resume}}
+\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -79,7 +79,7 @@
 \newcommand*{\email}[1]{\def\@email{#1}}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 \newcommand*{\github}[1]{\def\@github{#1}}
-\newcommand{\makecvsocials}{
+\newcommand{\makecvheader}{
     \begin{flushleft}
         {\Huge\bfseries\@name}\vspace{0.25em}\\
         {\small\textcolor{Secondary}{\@position}}\vspace{0.25em}\\
@@ -102,9 +102,14 @@
             {\href{https://linkedin.com/in/\@linkedin}{\faLinkedin\space\@linkedin}}
     \end{flushleft}
 }
+\newcommand{\makecvfooter}[3]{
+    \fancyfoot[L]{\textcolor{Primary!50}{#1}}
+    \fancyfoot[C]{\textcolor{Primary!50}{#2}}
+    \fancyfoot[R]{\textcolor{Primary!50}{#3}}
+}
 \newcommand{\cvseparator}{\textcolor{Primary!50}{ | }}
 \newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
-\newcommand{\cventryi}[1]{\item[] \textcolor{Primary!50}{#1}}
+\newcommand{\cventryi}[1]{\item[] {#1}}
 \newcommand{\cventryii}[2]{\item[] {#1}\hfill\textcolor{Primary!50}{#2}}
 \newcommand{\cventryiv}[4]{\item[]
     {#1}\hfill\textcolor{Primary!50}{#2}\\
@@ -117,6 +122,3 @@
 \newenvironment{cventries}
     {\begin{itemize}[leftmargin=0cm, rightmargin=0cm]}
     {\end{itemize}}
-\newenvironment{cvparagraph}
-    {}
-    {\par}
