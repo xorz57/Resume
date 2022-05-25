@@ -87,15 +87,15 @@
         \ifthenelse
             {\isundefined{\@mobile}}
             {}
-            {\href{tel:\@mobile}{\faMobile\space\@mobile} \cvseparator }
+            {\href{tel:\@mobile}{\faMobile\space\@mobile}}
         \ifthenelse
             {\isundefined{\@email}}
             {}
-            {\href{mailto:\@email}{\faEnvelope\space\@email} \cvseparator }
+            {\href{mailto:\@email}{\faEnvelope\space\@email}}
         \ifthenelse
             {\isundefined{\@github}}
             {}
-            {\href{https://github.com/\@github}{\faGithub\space\@github} \cvseparator }
+            {\href{https://github.com/\@github}{\faGithub\space\@github}}
         \ifthenelse
             {\isundefined{\@linkedin}}
             {}
