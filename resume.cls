@@ -79,10 +79,10 @@
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 \newcommand*{\github}[1]{\def\@github{#1}}
 \newcommand{\makecvsocials}{
-    \begin{center}
+    \begin{flushleft}
         {\Huge\bfseries\@name}\vspace{0.25em}\\
         {\small\textcolor{Secondary}{\@position}}\vspace{0.25em}\\
-        {\small\itshape\textcolor{Primary!50}{Gkoura 98, Piraeus 18546, Greece}}\\
+        {\small\itshape\textcolor{Primary!50}{Gkoura 98, Piraeus 18546, Greece}}\vspace{0.25em}\\
         \ifthenelse
             {\isundefined{\@mobile}}
             {}
@@ -99,7 +99,7 @@
             {\isundefined{\@linkedin}}
             {}
             {\href{https://linkedin.com/in/\@linkedin}{\faLinkedin\space\@linkedin}}
-    \end{center}
+    \end{flushleft}
 }
 \newcommand{\cvseparator}{\textcolor{Primary!50}{ | }}
 \newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
