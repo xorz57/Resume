@@ -5,6 +5,7 @@
 %------------------------------------------------------------------------------
 % Packages
 %------------------------------------------------------------------------------
+\usepackage[stamp=true]{draftwatermark}
 \usepackage{fontawesome5}
 \usepackage{polyglossia}
 \usepackage{blindtext}
@@ -14,7 +15,7 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{parskip}
-\usepackage{xcolor}
+\usepackage[svgnames]{xcolor}
 \usepackage{ifthen}
 \usepackage{xparse}
 
@@ -37,6 +38,12 @@
 \definecolor{Secondary}{HTML}{00A388}
 
 \color{Primary}
+
+%------------------------------------------------------------------------------
+% Configure draftwatermark
+%------------------------------------------------------------------------------
+\SetWatermarkText{draft}
+\SetWatermarkScale{2}
 
 %------------------------------------------------------------------------------
 % Configure hyperref
