@@ -74,6 +74,7 @@
 %------------------------------------------------------------------------------
 \newcommand*{\name}[1]{\def\@name{#1}}
 \newcommand*{\position}[1]{\def\@position{#1}}
+\newcommand*{\address}[1]{\def\@address{#1}}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
 \newcommand*{\email}[1]{\def\@email{#1}}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
@@ -82,11 +83,11 @@
     \begin{flushleft}
         {\Huge\bfseries\@name}\vspace{0.25em}\\
         {\small\textcolor{Secondary}{\@position}}\vspace{0.25em}\\
-        {\small\itshape\textcolor{Primary!50}{Gkoura 98, Piraeus 18546, Greece}}\vspace{0.25em}\\
+        {\small\itshape\textcolor{Primary!50}{\@address}}\vspace{0.25em}\\
         \ifthenelse
             {\isundefined{\@mobile}}
             {}
-            {\href{tel:\@mobile}{\faPhone\space\@mobile} \cvseparator }
+            {\href{tel:\@mobile}{\faMobile\space\@mobile} \cvseparator }
         \ifthenelse
             {\isundefined{\@email}}
             {}
