@@ -33,19 +33,21 @@
 %------------------------------------------------------------------------------
 % Configure xcolor
 %------------------------------------------------------------------------------
-\definecolor{Primary}{HTML}{212121}
-\definecolor{Secondary}{HTML}{00A388}
 
-\color{Primary}
+\definecolor{RaisinBlack}{HTML}{252323}
+\definecolor{CornflowerBlue}{HTML}{648de5}
+\definecolor{AppleGreen}{HTML}{7fb800}
+
+\color{RaisinBlack}
 
 %------------------------------------------------------------------------------
 % Configure hyperref
 %------------------------------------------------------------------------------
 \hypersetup{
     colorlinks=true,
-    linkcolor=Primary,
-    filecolor=Primary,
-    urlcolor=Primary
+    linkcolor=RaisinBlack,
+    filecolor=RaisinBlack,
+    urlcolor=RaisinBlack
 }
 
 %------------------------------------------------------------------------------
@@ -75,8 +77,8 @@
 \newcommand{\makecvheader}{
     \begin{flushleft}
         {\Huge\bfseries\@name}\vspace{0.25em}\\
-        {\small\textcolor{Secondary}{\@position}}\vspace{0.25em}\\
-        {\small\itshape\textcolor{Primary!50}{\@address}}\vspace{0.25em}\\
+        {\small\textcolor{CornflowerBlue}{\@position}}\vspace{0.25em}\\
+        {\small\itshape\textcolor{RaisinBlack!50}{\@address}}\vspace{0.25em}\\
         \ifthenelse
             {\isundefined{\@mobile}}
             {}
@@ -96,17 +98,17 @@
     \end{flushleft}
 }
 \newcommand{\makecvfooter}[3]{
-    \fancyfoot[L]{\textcolor{Primary!50}{#1}}
-    \fancyfoot[C]{\textcolor{Primary!50}{#2}}
-    \fancyfoot[R]{\textcolor{Primary!50}{#3}}
+    \fancyfoot[L]{\textcolor{RaisinBlack!50}{#1}}
+    \fancyfoot[C]{\textcolor{RaisinBlack!50}{#2}}
+    \fancyfoot[R]{\textcolor{RaisinBlack!50}{#3}}
 }
-\newcommand{\cvseparator}{\textcolor{Primary!50}{ | }}
+\newcommand{\cvseparator}{\textcolor{RaisinBlack!50}{ | }}
 \newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
 \newcommand{\cventryi}[1]{\item[] {#1}}
-\newcommand{\cventryii}[2]{\item[] {#1}\hfill\textcolor{Primary!50}{#2}}
+\newcommand{\cventryii}[2]{\item[] {#1}\hfill\textcolor{RaisinBlack!50}{#2}}
 \newcommand{\cventryiv}[4]{\item[]
-    {#1}\hfill\textcolor{Primary!50}{#2}\\
-    {#3}\hfill\textcolor{Primary!50}{#4}
+    {#1}\hfill\textcolor{RaisinBlack!50}{#2}\\
+    {#3}\hfill\textcolor{RaisinBlack!50}{#4}
 }
 
 %------------------------------------------------------------------------------
