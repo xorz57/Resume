@@ -108,11 +108,18 @@
 }
 \newcommand{\cvseparator}{\textcolor{RaisinBlack!50}{ | }}
 \newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
-\newcommand{\cventryi}[1]{\item[] {#1}}
-\newcommand{\cventryii}[2]{\item[] {#1}\hfill\textcolor{RaisinBlack!50}{#2}}
-\newcommand{\cventryiv}[4]{\item[]
-    {#1}\hfill\textcolor{RaisinBlack!50}{#2}\\
-    {#3}\hfill\textcolor{RaisinBlack!50}{#4}
+\newcommand{\cventryi}[1]{
+    \item[]
+        {#1}
+}
+\newcommand{\cventryii}[2]{
+    \item[]
+        {#1}\hfill\textcolor{RaisinBlack!50}{#2}
+}
+\newcommand{\cventryiv}[4]{
+    \item[]
+        {#1}\hfill\textcolor{RaisinBlack!50}{#2}\\
+        {#3}\hfill\textcolor{RaisinBlack!50}{#4}
 }
 
 %------------------------------------------------------------------------------
