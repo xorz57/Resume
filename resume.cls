@@ -35,8 +35,9 @@
 %------------------------------------------------------------------------------
 
 \definecolor{RaisinBlack}{HTML}{252323}
-\definecolor{CornflowerBlue}{HTML}{648de5}
-\definecolor{AppleGreen}{HTML}{7fb800}
+\definecolor{CornflowerBlue}{HTML}{648DE5}
+\definecolor{AppleGreen}{HTML}{7FB800}
+\definecolor{RustyRed}{HTML}{DE3C4B}
 
 \color{RaisinBlack}
 
@@ -76,8 +77,8 @@
 \newcommand*{\github}[1]{\def\@github{#1}}
 \newcommand{\makecvheader}{
     \begin{flushleft}
-        {\Huge\bfseries\@name}\vspace{0.25em}\\
-        {\small\textcolor{CornflowerBlue}{\@position}}\vspace{0.25em}\\
+        {\huge\bfseries\@name}\vspace{0.25em}\\
+        {\large\textcolor{CornflowerBlue}{\@position}}\vspace{0.25em}\\
         {\small\itshape\textcolor{RaisinBlack!50}{\@address}}\vspace{0.25em}\\
         \ifthenelse
             {\isundefined{\@mobile}}
