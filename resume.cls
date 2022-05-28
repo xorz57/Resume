@@ -75,27 +75,30 @@
 \newcommand*{\email}[1]{\def\@email{#1}}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 \newcommand*{\github}[1]{\def\@github{#1}}
+\newcommand{\cvsocials}{
+    \ifthenelse
+        {\isundefined{\@mobile}}
+        {}
+        {\href{tel:\@mobile}{\faMobile\space\@mobile}}
+    \ifthenelse
+        {\isundefined{\@email}}
+        {}
+        {\href{mailto:\@email}{\faEnvelope\space\@email}}
+    \ifthenelse
+        {\isundefined{\@github}}
+        {}
+        {\href{https://github.com/\@github}{\faGithub\space\@github}}
+    \ifthenelse
+        {\isundefined{\@linkedin}}
+        {}
+        {\href{https://linkedin.com/in/\@linkedin}{\faLinkedin\space\@linkedin}}
+}
 \newcommand{\makecvheader}{
     \begin{flushleft}
         {\huge\bfseries\@name}\vspace{0.25em}\\
         {\large\textcolor{CornflowerBlue}{\@position}}\vspace{0.25em}\\
         {\small\itshape\textcolor{RaisinBlack!50}{\@address}}\vspace{0.25em}\\
-        \ifthenelse
-            {\isundefined{\@mobile}}
-            {}
-            {\href{tel:\@mobile}{\faMobile\space\@mobile}}
-        \ifthenelse
-            {\isundefined{\@email}}
-            {}
-            {\href{mailto:\@email}{\faEnvelope\space\@email}}
-        \ifthenelse
-            {\isundefined{\@github}}
-            {}
-            {\href{https://github.com/\@github}{\faGithub\space\@github}}
-        \ifthenelse
-            {\isundefined{\@linkedin}}
-            {}
-            {\href{https://linkedin.com/in/\@linkedin}{\faLinkedin\space\@linkedin}}
+        {\small\cvsocials}
     \end{flushleft}
 }
 \newcommand{\makecvfooter}[3]{
