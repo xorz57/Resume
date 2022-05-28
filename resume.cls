@@ -5,7 +5,6 @@
 %------------------------------------------------------------------------------
 % Packages
 %------------------------------------------------------------------------------
-\usepackage[stamp=true]{draftwatermark}
 \usepackage{fontawesome5}
 \usepackage{polyglossia}
 \usepackage{blindtext}
@@ -18,12 +17,6 @@
 \usepackage[svgnames]{xcolor}
 \usepackage{ifthen}
 \usepackage{xparse}
-
-%------------------------------------------------------------------------------
-% Configure draftwatermark
-%------------------------------------------------------------------------------
-\SetWatermarkText{draft}
-\SetWatermarkScale{2}
 
 %------------------------------------------------------------------------------
 % Configure polyglossia
