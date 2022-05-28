@@ -14,7 +14,7 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{parskip}
-\usepackage[svgnames]{xcolor}
+\usepackage{xcolor}
 \usepackage{ifthen}
 \usepackage{xparse}
 
