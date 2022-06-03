@@ -107,6 +107,7 @@
     \fancyfoot[R]{\textcolor{RaisinBlack!50}{#3}}
 }
 \newcommand{\cvseparator}{\textcolor{RaisinBlack!50}{ | }}
+\newcommand{\cvrule}{\vspace{0.25em}\rule{\textwidth}{0.25em}\vspace{-0.25em}}
 \newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
 \newcommand{\cventryi}[1]{
     \item[]
