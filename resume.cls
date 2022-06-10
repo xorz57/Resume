@@ -9,10 +9,8 @@
 \usepackage{polyglossia}
 \usepackage{blindtext}
 \usepackage{fontspec}
-\usepackage{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
-\usepackage{fancyhdr}
 \usepackage{parskip}
 \usepackage{xcolor}
 \usepackage{ifthen}
@@ -52,20 +50,6 @@
 }
 
 %------------------------------------------------------------------------------
-% Configure geometry
-%------------------------------------------------------------------------------
-\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1cm, right=1cm}
-
-%------------------------------------------------------------------------------
-% Configure fancyhdr
-%------------------------------------------------------------------------------
-\pagestyle{fancy}
-\fancyhead{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-%------------------------------------------------------------------------------
 % Commands
 %------------------------------------------------------------------------------
 \newcommand*{\name}[1]{\def\@name{#1}}
@@ -93,7 +77,7 @@
         {}
         {\href{https://linkedin.com/in/\@linkedin}{\faLinkedin\space\@linkedin}}
 }
-\newcommand{\makecvheader}{
+\newcommand{\makecvtitle}{
     \begin{flushleft}
         {\huge\bfseries\@name}\vspace{0.25em}\\
         {\large\textcolor{CornflowerBlue}{\@position}}\vspace{0.25em}\\
@@ -101,13 +85,8 @@
         {\small\cvsocials}
     \end{flushleft}
 }
-\newcommand{\makecvfooter}[3]{
-    \fancyfoot[L]{\textcolor{RaisinBlack!50}{#1}}
-    \fancyfoot[C]{\textcolor{RaisinBlack!50}{#2}}
-    \fancyfoot[R]{\textcolor{RaisinBlack!50}{#3}}
-}
 \newcommand{\cvseparator}{\textcolor{RaisinBlack!50}{ | }}
-\newcommand{\cvrule}{\vspace{0.25em}\rule{\textwidth}{0.25em}\vspace{-0.50em}}
+\newcommand{\cvrule}{\vspace{0.25em}\textcolor{RaisinBlack!50}{\rule{\textwidth}{0.25em}}\vspace{-0.50em}}
 \newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
 \newcommand{\cventryi}[1]{
     \item[]

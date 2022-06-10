@@ -1,5 +1,21 @@
 \documentclass{resume}
 
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+%------------------------------------------------------------------------------
+% Configure geometry
+%------------------------------------------------------------------------------
+\geometry{a4paper, top=1cm, bottom=1cm, left=1cm, right=1cm}
+
+%------------------------------------------------------------------------------
+% Configure fancyhdr
+%------------------------------------------------------------------------------
+\pagestyle{empty}
+
+%------------------------------------------------------------------------------
+% Configure resume
+%------------------------------------------------------------------------------
 \name{Georgios Fotopoulos}
 \position{Graduate Software Engineer}
 \address{Gkoura 98, Piraeus 18546, Greece}
@@ -10,19 +26,15 @@
 
 \begin{document}
 
-\makecvheader
-
-\makecvfooter
-    {\today}
-    {Resume}
-    {}
+\makecvtitle
 
 \input{resume/summary}
 \input{resume/experience}
 \input{resume/education}
 \input{resume/skills}
-\input{resume/projects}
 \input{resume/languages}
+% \input{resume/interests}
+% \input{resume/projects}
 % \input{resume/certificates}
 
 \end{document}
