@@ -97,7 +97,7 @@
     \begin{flushleft}
         {\huge\bfseries\@name}\vspace{0.25em}\\
         {\large\textcolor{CornflowerBlue}{\@position}}\vspace{0.25em}\\
-        {\small\itshape\textcolor{RaisinBlack!50}{\@address}}\vspace{0.25em}\\
+        {\small\textcolor{RaisinBlack!50}{\@address}}\vspace{0.25em}\\
         {\small\cvsocials}
     \end{flushleft}
 }
