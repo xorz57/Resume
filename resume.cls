@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2022/05/20 Resume Class]
-\LoadClass[12pt]{article}
+\LoadClass[11pt]{article}
 
 %------------------------------------------------------------------------------
 % Packages
@@ -54,7 +54,7 @@
 %------------------------------------------------------------------------------
 % Configure geometry
 %------------------------------------------------------------------------------
-\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1cm, right=1cm}
 
 %------------------------------------------------------------------------------
 % Configure fancyhdr
