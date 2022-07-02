@@ -4,7 +4,7 @@
 
 ## Preview
 
-![preview](https://user-images.githubusercontent.com/84932056/174192873-8488bcb7-665a-4243-af0f-a96a16f84888.png)
+![preview](https://user-images.githubusercontent.com/84932056/177003265-09ac178e-e1d5-4ba8-9fe0-5c608784f762.png)
 
 ## Donations
 
