@@ -37,16 +37,22 @@
 \definecolor{AppleGreen}{HTML}{7FB800}
 \definecolor{RustyRed}{HTML}{DE3C4B}
 
-\color{RaisinBlack}
+\colorlet{TextColor}{RaisinBlack!25}
+\colorlet{NoteColor}{RaisinBlack!50}
+\colorlet{PageColor}{RaisinBlack}
+\colorlet{AccentColor}{RustyRed}
+
+\color{TextColor}
+\pagecolor{PageColor}
 
 %------------------------------------------------------------------------------
 % Configure hyperref
 %------------------------------------------------------------------------------
 \hypersetup{
     colorlinks=true,
-    linkcolor=RaisinBlack,
-    filecolor=RaisinBlack,
-    urlcolor=RaisinBlack
+    linkcolor=TextColor,
+    filecolor=TextColor,
+    urlcolor=TextColor
 }
 
 %------------------------------------------------------------------------------
@@ -78,28 +84,35 @@
         {\href{https://linkedin.com/in/\@linkedin}{\faLinkedin\space\@linkedin}}
 }
 \newcommand{\makecvtitle}{
-    \begin{flushleft}
-        {\huge\bfseries\@name}\vspace{0.25em}\\
-        {\large\textcolor{CornflowerBlue}{\@position}}\vspace{0.25em}\\
-        {\small\textcolor{RaisinBlack!50}{\@address}}\vspace{0.25em}\\
+    \begin{center}
+        {\Huge\bfseries\@name}\vspace{0.25em}\\
+        {\large\textcolor{AccentColor}{\@position}}\vspace{0.25em}\\
+        {\small\textcolor{NoteColor}{\@address}}\vspace{0.25em}\\
         {\small\cvsocials}
-    \end{flushleft}
+    \end{center}
 }
-\newcommand{\cvseparator}{\textcolor{RaisinBlack!50}{ | }}
-\newcommand{\cvrule}{\vspace{0.25em}\textcolor{RaisinBlack!50}{\rule{\textwidth}{0.25em}}\vspace{-0.50em}}
-\newcommand{\cvsection}[1]{\vspace{1em}{\large\bfseries #1}}
+\newcommand{\cvseparator}{\textcolor{NoteColor}{ | }}
+\newcommand{\cvrule}{
+    \vspace{0.25em}
+    \textcolor{NoteColor}{\rule{\textwidth}{0.25em}}
+    \vspace{-0.50em}
+}
+\newcommand{\cvsection}[1]{
+    \vspace{1em}
+    {\large\bfseries\textcolor{AccentColor}{#1}}
+}
 \newcommand{\cventryi}[1]{
     \item[]
         {#1}
 }
 \newcommand{\cventryii}[2]{
     \item[]
-        {#1}\hfill\textcolor{RaisinBlack!50}{#2}
+        {#1}\hfill\textcolor{NoteColor}{#2}
 }
 \newcommand{\cventryiv}[4]{
     \item[]
-        {#1}\hfill\textcolor{RaisinBlack!50}{#2}\\
-        {#3}\hfill\textcolor{RaisinBlack!50}{#4}
+        {#1}\hfill\textcolor{NoteColor}{#2}\\
+        {#3}\hfill\textcolor{NoteColor}{#4}
 }
 
 %------------------------------------------------------------------------------
