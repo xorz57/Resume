@@ -2,10 +2,6 @@
 
 *Resume written in LaTeX*
 
-## Preview
-
-![preview](https://user-images.githubusercontent.com/84932056/177222347-6753c5a0-cf83-4d54-81ea-bdaf4f64a11b.png)
-
 ## Donations
 
 ```
