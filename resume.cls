@@ -37,10 +37,15 @@
 \definecolor{AppleGreen}{HTML}{7FB800}
 \definecolor{RustyRed}{HTML}{DE3C4B}
 
-\colorlet{TextColor}{RaisinBlack!25}
-\colorlet{NoteColor}{RaisinBlack!50}
-\colorlet{PageColor}{RaisinBlack}
+\colorlet{TextColor}{RaisinBlack!10}
+\colorlet{NoteColor}{RaisinBlack!60}
+\colorlet{PageColor}{RaisinBlack!100}
 \colorlet{AccentColor}{RustyRed}
+
+% \colorlet{TextColor}{RaisinBlack!100}
+% \colorlet{NoteColor}{RaisinBlack!60}
+% \colorlet{PageColor}{RaisinBlack!10}
+% \colorlet{AccentColor}{CornflowerBlue}
 
 \color{TextColor}
 \pagecolor{PageColor}
@@ -111,7 +116,7 @@
 }
 \newcommand{\cventryiv}[4]{
     \item[]
-        {#1}\hfill\textcolor{NoteColor}{#2}\\
+        {\large\bfseries #1}\hfill{\large\bfseries\textcolor{NoteColor}{#2}}\\
         {#3}\hfill\textcolor{NoteColor}{#4}
 }
 
